@@ -1,2 +1,0 @@
-# minimum-boilerplate-theme
-vtexio
