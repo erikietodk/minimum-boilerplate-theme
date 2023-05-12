@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "global": "^4.4.0",
+    "sass": "^1.62.1"
+  },
+  "scripts": {
+    "sass": "sass --no-source-map --watch styles/scss:styles/css  --style compressed"
+  }
+}
