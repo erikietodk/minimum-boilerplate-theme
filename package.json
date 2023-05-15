@@ -3,7 +3,18 @@
     "global": "^4.4.0",
     "sass": "^1.62.1"
   },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ]
+  },
   "scripts": {
-    "sass": "sass --no-source-map --watch styles/scss:styles/css  --style compressed"
+    "sass": "sass --no-source-map --watch styles/scss:styles/css  --style compressed",
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\""
   }
 }
